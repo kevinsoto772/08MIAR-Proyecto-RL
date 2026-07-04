@@ -1,0 +1,47 @@
+# ============================================
+# .gitignore - 08MIAR-Proyecto-RL
+# ============================================
+
+# --- Checkpoints intermedios de entrenamiento ---
+# (dqn_Acrobot-v1_p1_weights_10000.h5f, _20000.h5f, etc.)
+*_weights_*.h5f*
+*checkpoint*.h5f*
+
+# --- Pesos "finales" intermedios (no el mejor modelo) ---
+# Descomenta la siguiente línea si NO quieres subir ni siquiera los pesos finales por propuesta
+# *_weights.h5f*
+
+# --- Videos generados por Monitor/pyvirtualdisplay ---
+videos_proyecto*/
+*.mp4
+*.avi
+
+# --- Archivos temporales de puntuación del callback SaveBestModel ---
+# (déjalo comentado si SÍ quieres versionar el histórico de mejor puntuación)
+# *_score.txt
+
+# --- Entornos virtuales / Conda ---
+venv/
+env/
+.venv/
+*.egg-info/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs generales (opcional, si generas .log aparte de los .json de FileLogger) ---
+*.log
+
+# --- Archivos grandes de datos que no deban subirse ---
+*.zip
+*.tar.gz
