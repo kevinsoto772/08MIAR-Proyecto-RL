@@ -42,6 +42,6 @@ desktop.ini
 # --- Logs generales (opcional, si generas .log aparte de los .json de FileLogger) ---
 *.log
 
-# --- Archivos grandes de datos que no deban subirse ---
-*.zip
-*.tar.gz
+# # --- Archivos grandes de datos que no deban subirse ---
+# *.zip
+# *.tar.gz
